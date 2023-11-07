@@ -1,0 +1,433 @@
+@import url("https://use.typekit.net/jpw0pnj.css");
+
+body{
+    margin:0 auto;
+    max-width:1920px;
+    font-family: "baskerville-urw", serif;
+
+}
+hr{
+    background-color: black;
+    height:1px;
+    margin: 0;
+    width:99.9%
+}
+.heart{
+    width:7.5vh;
+}
+
+
+
+/* Header */
+.navbar{
+  display:flex;
+  align-items: center;
+}
+header h1{
+    font-family: "baskerville-urw", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:3.5vw;
+    margin:0;
+
+}
+
+/* Footer */
+
+footer{
+  height:100px;
+  bottom:0;
+  width:100%;
+  text-align: center;
+  font-size: 2em;
+  left:0;
+  
+}
+footer h1{
+  margin:0;
+  font-weight:200;
+}
+
+
+
+
+/* home page */
+#about h1{
+  font-weight: 400;
+  text-align: center;
+  font-size:4em;
+  margin:0;
+}
+#text{
+  text-align: center;
+  
+  
+}
+.pic{
+  width:20%;
+  float:right;
+  margin:10px;
+  margin-right:20%;
+  padding:2px;
+  background-color: black;
+  margin-bottom:5%;
+}
+.why{
+  font-size:2em;
+  margin-left: 20%;
+  
+}
+
+
+
+
+/* Memories */
+#memorieshead h1{
+  font-weight: 400;
+  text-align: center;
+  font-size:4em;
+  margin:0;
+}
+
+
+
+/* Memory1 */
+#memory1{
+  text-align: center;
+  margin-top:1%;
+  margin-bottom:10%;
+}
+#memory1 img{
+  width:15%;
+  margin:1%;
+  margin-left:30%;
+  float:left;
+  padding: 2px;
+  background-color: black;
+}
+#memory1 h1{
+  font-size:2em;
+  text-align: center;
+  margin:0 auto;
+
+}
+#memory1 h1,p{
+  margin-right:30%;
+}
+#memory1 p{
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+
+/* Memory2 */
+#memory2{
+  margin-top:1%;
+  margin-bottom:10%;
+}
+#memory2 h1{
+  font-size:2em;
+  text-align: center;
+  margin:0 auto;
+}
+#memory2 h1,p{
+  margin-left:30%;
+}
+#memory2 p{
+  font-size: 1.5em;
+  text-align: center;
+}
+#memory2 img{
+  width:15%;
+  margin:1%;
+  margin-right:30%;
+  float:right;
+  padding: 2px;
+  background-color: black;
+}
+
+/* Read */
+
+#dear h1{
+  font-weight: 400;
+  text-align: center;
+  font-size:4em;
+  margin:0;
+}
+#deartext{
+  font-size:2em;
+  margin-left:20%;
+  margin-right:20%;
+  text-align: center;
+}
+#deartext p{
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+/* collage */
+
+#collage{
+  display:grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap:10px;
+  
+}
+#box{
+  
+  margin:1%;
+  margin-left:10%;
+  margin-right:10%;
+}
+#collage img:hover{
+  transform: scale(1.05);
+ 
+}
+#collage img{
+  width:100%;
+  border-color:black;
+  border-style: solid;
+  box-sizing: border-box;
+  border-width: 1px;
+  transition: transform .5s;
+}
+#m_one{
+  grid-column: 1/3;
+  grid-row: 1/3
+}
+#s_one{
+  grid-column: 3/4;
+  grid-row:1/2;
+}
+#s_two{
+  grid-column: 3/4;
+  grid-row:2/3;
+}
+#l_one{
+  grid-column: 1/4;
+  grid-row:3/6;
+}
+#l_two{
+  grid-column:4/7 ;
+  grid-row: 1/4 ;
+}
+#m_two{
+  grid-column: 4/6 ;
+  grid-row: 4/6 ;
+}
+#s_three{
+  grid-column:6/7 ;
+  grid-row:4/5 ;
+}
+#s_four{
+  grid-column:6/7 ;
+  grid-row:5/6 ;
+}
+#l_three{
+  grid-column: 7/10;
+  grid-row: 3/6;
+}
+#m_three{
+  grid-column: 8/10;
+  grid-row: 1/3;
+}
+#s_five{
+  grid-column: 7/8 ;
+  grid-row: 1/2 ;
+}
+#s_six{
+  grid-column:7/8 ;
+  grid-row:2/3 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* phone responsiveness */
+
+@media screen and (max-width:700px){
+
+  .navbar h1{
+    font-size:9vw
+  }
+  .heart{
+    width:6vw;
+    
+  }
+  #collage{
+    display:block;
+    width:80%;
+    margin:0 auto;
+  }
+  .pic{
+    float:none;
+    width:50%;
+    padding:2px;
+    text-align: center;
+    margin:0;
+    margin-left:0;
+  }
+  .why{
+    font-size:2em;
+    margin-left:5%;
+    margin-right:5%;
+    
+  }
+  #deartext{
+    margin-left:5%;
+    margin-right:5%;
+    text-align: center;
+  }
+  .heart{
+    width:8vh;
+  }
+  /* Memory 1 */
+  #memory1{
+  text-align: center;
+  }
+  #memory1 img{
+  width:30%;
+  margin-left:1%;
+  float:none;
+  text-align: center;
+  margin-bottom:0
+  }
+  #memory1 h1,p{
+  margin-left:1%;
+  margin-right:1%;
+  }     
+  #memory1 p{
+  font-size: 1em;
+  }
+  #memory2{
+  text-align: center;
+  }
+  #memory2 img{
+  width:30%;
+  margin-left:1%;
+  margin-right:1%;
+  float:none;
+  text-align: center;
+  margin-bottom:0
+  }
+  #memory2 h1,p{
+  margin-left:1%;
+  margin-right:1%;
+  }     
+  #memory2 p{
+  font-size: 1em;
+  }
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    font-family: Arial;
+    width: 100%;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(145, 97, 145);
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(194, 160, 194);
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
